@@ -1,0 +1,7 @@
+body { 
+  /* font-family: Georgia, Garamond, Times New Roman, serif; */
+  font-family: Arial, Verdana, sans-serif;
+  background-color: transparent;
+  text-rendering: optimize-speed;
+  -webkit-font-smoothing: antialiased;
+}

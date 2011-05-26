@@ -20,7 +20,8 @@ class PostsController < ApplicationController
       format.xml  { render :xml => @post }
       format.pdf do
         render :pdf => "wicked",
-               :layout => "pdf.html.erb"
+               :layout => "pdf.html",
+               :disable_smart_shrinking => false
       end
     end
   end
