@@ -19,7 +19,8 @@ class PostsController < ApplicationController
       format.html # show.html.erb
       format.xml  { render :xml => @post }
       format.pdf do                   # highlight
-        render :pdf => "file_name"    #
+        render :pdf => "file_name",    #
+               :layout => "pdf.html.erb"
       end                             #
     end
   end
