@@ -18,9 +18,9 @@ class PostsController < ApplicationController
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @post }
-      format.pdf do
-        render :pdf => "file_name"
-      end
+      format.pdf do                   # highlight
+        render :pdf => "file_name"    #
+      end                             #
     end
   end
 
