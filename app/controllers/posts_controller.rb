@@ -19,9 +19,7 @@ class PostsController < ApplicationController
       format.html # show.html.erb
       format.xml  { render :xml => @post }
       format.pdf do
-        render :pdf => "wicked-#{@post.id}",
-               :layout => "pdf.html",
-               :disable_smart_shrinking => false
+        render :pdf => "wicked-#{@post.id}"  # you can override default options defined in config/initializers/wicked_pdf.rb
       end
     end
   end
