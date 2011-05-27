@@ -10,7 +10,7 @@
 
 <% @posts.each do |post| %>
   <tr>
-    <td><%= post.content %></td>
+    <td><%= "#{post.id}. " + truncate(strip_tags(post.content), :length => 30) %></td>
     <td><%= link_to 'Show', post %></td>
     <td><%= link_to 'Edit', edit_post_path(post) %></td>
     <td><%= link_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete %></td>
