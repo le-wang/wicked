@@ -2,6 +2,7 @@ wkhtmltopdf_exe_path = Rails.env.production? ? Rails.root.join('bin', 'wkhtmltop
 
 WickedPdf.config = {
   :wkhtmltopdf => wkhtmltopdf_exe_path,
+  :show_as_html => params[:debug].present?,
   :layout => "pdf.html",
   :page_size => "Letter",
   :dpi => 100,
