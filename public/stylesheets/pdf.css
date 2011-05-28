@@ -1,12 +1,8 @@
 body { 
-  font-family: Arial, Verdana, sans-serif;
+  font-family: "Georgia";
+  font-size: 11pt;
   background-color: transparent;
   text-rendering: optimize-speed;
   -webkit-font-smoothing: antialiased;
   text-align: justify;
-}
-
-p {
-  font-family: "Georgia";
-  font-size: 12px;
 }

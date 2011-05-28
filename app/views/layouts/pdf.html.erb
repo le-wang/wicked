@@ -3,32 +3,7 @@
 <head>
   <title>Wicked</title>
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <style type="text/css">
-    @font-face {
-      font-family: 'Georgia';
-      font-style: normal;
-      font-weight: normal;
-      src: url('<%= Rails.root.join('lib', 'fonts', 'Georgia.ttf').to_s %>') format('truetype');
-    }
-    @font-face {
-      font-family: 'Georgia Bold';
-      font-style: normal;
-      font-weight: bold;
-      src: url('<%= Rails.root.join('lib', 'fonts', 'Georgia Bold.ttf').to_s %>') format('truetype');
-    }
-    @font-face {
-      font-family: 'Georgia Italic';
-      font-style: italic;
-      font-weight: normal;
-      src: url('<%= Rails.root.join('lib', 'fonts', 'Georgia Italic.ttf').to_s %>') format('truetype');
-    }
-    @font-face {
-      font-family: 'Georgia Bold Italic';
-      font-style: italic;
-      font-weight: bold;
-      src: url('<%= Rails.root.join('lib', 'fonts', 'Georgia Bold Italic.ttf').to_s %>') format('truetype');
-    }
-  </style>
+  <%= render 'layouts/custom_fonts' %>
   <%= wicked_pdf_stylesheet_link_tag "pdf" %>
 </head>
 <body>
