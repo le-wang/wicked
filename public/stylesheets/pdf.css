@@ -3,8 +3,10 @@ body {
   background-color: transparent;
   text-rendering: optimize-speed;
   -webkit-font-smoothing: antialiased;
+  text-align: justify;
 }
 
 p {
-  text-align: justify;
+  font-family: "Georgia";
+  font-size: 12px;
 }
